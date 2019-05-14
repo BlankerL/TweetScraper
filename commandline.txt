@@ -1,0 +1,1 @@
+scrapy crawl TweetScraper -a query="from:realDonaldTrump, Canada OR Canadian, trade OR NAFAT"
