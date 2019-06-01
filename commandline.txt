@@ -1,1 +1,3 @@
 scrapy crawl TweetScraper -a query="from:realDonaldTrump, Canada OR Canadian, trade OR NAFAT"
+
+scrapy crawl TweetScraper -a query='"oil price" OR "us dollar index" OR "RMB exchange rate" OR "gold price" OR "equity market" since:2019-05-01'
