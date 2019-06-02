@@ -8,7 +8,7 @@ BOT_NAME = 'TweetScraper'
 LOG_LEVEL = 'INFO'
 DOWNLOAD_HANDLERS = {'s3': None, }  # from http://stackoverflow.com/a/31233576/2297751, TODO
 DOWNLOADER_MIDDLEWARES = {
-    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+    'TweetScraper.middlewares.ProxyMiddleware': 100,
 }
 
 SPIDER_MODULES = ['TweetScraper.spiders']
